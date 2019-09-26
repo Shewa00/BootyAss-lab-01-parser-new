@@ -1,0 +1,12 @@
+"D:\CLion 2019.2.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" C:\Users\panda\CLionProjects\lab-01-parser
+CMake Error at CMakeLists.txt:14 (include):
+  include could not find load file:
+
+    tools/gate/cmake/HunterGate.cmake
+
+
+CMake Error at CMakeLists.txt:16 (huntergate):
+  Unknown CMake command "huntergate".
+
+
+-- Configuring incomplete, errors occurred!
