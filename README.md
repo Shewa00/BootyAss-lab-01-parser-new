@@ -1,4 +1,8 @@
-# Задание 1
+![Some badge](https://img.shields.io/badge/Booty-Ass-yellow.svg) [![Build Status](https://travis-ci.org/BootyAss/lab-01-parser.svg?branch=master)](https://travis-ci.org/BootyAss/lab-01-parser) ![Discord](https://img.shields.io/discord/486961752823562240) ![GitHub repo size](https://img.shields.io/github/repo-size/bootyass/lab-01-parser?style=for-the-badge) [![forthebadge](https://forthebadge.com/images/badges/made-with-c-plus-plus.svg)](https://forthebadge.com) 
+
+# Лабораторная работа №1
+
+## Задание 1
 Реализовать парсер данных в формате JSON.
 
 JSON-текст представляет собой в закодированном виде одну из двух структур:
@@ -75,7 +79,7 @@ EXPECT_EQ(std::any_cast<std::string>(address["city"]), "Moscow");
 EXPECT_EQ(std::any_cast<std::string>(address["street"]), "Vozdvijenka");
 ```
 
-# Задание 2
+## Задание 2
 Полученный в первом задании парсер необходимо обернуть в статическую библиотеку и продемонстрировать её использование в клиентском приложении.
 
 В скрипте CMake создание статической библиотеки может быть выполнено командной:
@@ -88,7 +92,7 @@ add_library(json STATIC sources/json.cpp)
 add_executable(main sources/main.cpp)
 target_link_libraries(main json)
 ```
-# Задание 3
+## Задание 3
 На вход программы поступает информация о биржевых инструментах (массив тикеров, массив идентификаторов и массив описаний) в формате JSON вида:
 ```json
 [
