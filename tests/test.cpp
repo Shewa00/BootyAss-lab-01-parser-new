@@ -19,12 +19,18 @@ const char *const json_data = R"(
 TEST(Json, SimpleTest) {
     Json object = Json::parse(json_data);
     EXPECT_EQ(std::any_cast<std::string>(object["lastname"]), "Ivanov");
-    EXPECT_EQ(std::any_cast<bool>(object["islegal"]), false);
+    EXPECT_EQ(std::any_cast<std::string>(object["firstname"]), "Ivan");
     EXPECT_EQ(std::any_cast<double>(object["age"]), 25);
+    EXPECT_EQ(std::any_cast<bool>(object["islegal"]), false);
 
     auto marks = std::any_cast<Json>(object["marks"]);
     EXPECT_EQ(std::any_cast<double>(marks[0]), 4);
     EXPECT_EQ(std::any_cast<double>(marks[1]), 5);
+    EXPECT_EQ(std::any_cast<double>(marks[2]), 5);
+    EXPECT_EQ(std::any_cast<double>(marks[3]), 5);
+    EXPECT_EQ(std::any_cast<double>(marks[4]), 2);
+    EXPECT_EQ(std::any_cast<double>(marks[5]), 3);
+
 
     auto address = std::any_cast<Json>(object["address"]);
     EXPECT_EQ(std::any_cast<std::string>(address["city"]), "Moscow");

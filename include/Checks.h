@@ -2,8 +2,8 @@
 // Created by panda on 10.12.2019.
 //
 
-#ifndef LAB_01_PARSER_FUNCTION_H
-#define LAB_01_PARSER_FUNCTION_H
+#ifndef LAB_01_PARSER_CHECKS_H
+#define LAB_01_PARSER_CHECKS_H
 
 
 bool is_digit(const char ch) {
@@ -34,14 +34,6 @@ std::string correct_string(const std::string &s) {
     return str;
 }
 
-//size_t escapeSpace(const std::string& s, const size_t current)
-//{
-//	size_t i = current;
-//	while (s[i] == ' ' && i < s.size())
-//		i++;
-//	return i;
-//}
-
 std::string create_string(const std::string &s, const size_t current) {
     size_t end = current;
     while (s[end] != '\"' && end <= s.size())
@@ -59,4 +51,4 @@ std::string create_num(const std::string &s, const size_t current) {
     return num;
 }
 
-#endif //LAB_01_PARSER_FUNCTION_H
+#endif //LAB_01_PARSER_CHECKS_H

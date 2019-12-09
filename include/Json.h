@@ -8,15 +8,17 @@
 
 
 class Json {
+    std::map<std::string, std::any> Object;
+    std::vector<std::any> Array;
 public:
     // Конструктор из строки, содержащей Json-данные.
-    Json(const std::string &s);
+    explicit Json(const std::string &s);
 
     // Метод возвращает true, если данный экземпляр содержит в себе JSON-массив. Иначе false.
-    bool is_array() const;
+    [[nodiscard]] bool is_Array() const;
 
     // Метод возвращает true, если данный экземпляр содержит в себе JSON-объект. Иначе false.
-    bool is_object() const;
+    [[nodiscard]] bool is_Object() const;
 
     // Метод возвращает значение по ключу key, если экземпляр является JSON-объектом.
     // Значение может иметь один из следующих типов: Json, std::string, double, bool или быть пустым.
@@ -32,15 +34,11 @@ public:
     static Json parse(const std::string &s);
 
 
-    std::map<std::string, std::any> create_obj(const std::string &s, const size_t begin);
+    static std::map<std::string, std::any> create_Obj(const std::string &s, size_t begin);
 
-    std::vector<std::any> create_arr(const std::string &s, const size_t begin);
+    static std::vector<std::any> create_Arr(const std::string &s, size_t begin);
 
-    std::pair<std::any, size_t> create_value(const std::string &s, const size_t current);
-
-private:
-    std::map<std::string, std::any> obj;
-    std::vector<std::any> arr;
+    static std::pair<std::any, size_t> create_Value(const std::string &s, size_t current);
 };
 
 #endif //LAB_01_PARSER_JSON_H

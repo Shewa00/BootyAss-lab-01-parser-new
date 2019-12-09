@@ -1,41 +1,41 @@
 #include "Json.h"
-#include "function.h"
+#include "Checks.h"
 
 Json::Json(const std::string &s) {
     std::string str = correct_string(s);
     size_t i = 0;
     if (str[i] == '{')
-        obj = create_obj(str, ++i);
+        Object = create_Obj(str, ++i);
     else if (str[i] == '[')
-        arr = create_arr(str, ++i);
+        Array = create_Arr(str, ++i);
     else
         throw std::exception();
 }
 
-bool Json::is_array() const {
-    return !arr.empty();
+bool Json::is_Array() const {
+    return !Array.empty();
 }
 
-bool Json::is_object() const {
-    return !obj.empty();
+bool Json::is_Object() const {
+    return !Object.empty();
 }
 
 std::any &Json::operator[](const std::string &key) {
-    if (is_object())
-        return obj[key];
-
-    throw std::exception();
+    if (is_Object())
+        return Object[key];
+    else
+        throw std::exception();
 }
 
 std::any &Json::operator[](size_t index) {
-    if (is_array())
-        return arr[index];
-
-    throw std::exception();
+    if (is_Array())
+        return Array[index];
+    else
+        throw std::exception();
 }
 
 
-std::map<std::string, std::any> Json::create_obj(const std::string &s, const size_t begin) {
+std::map<std::string, std::any> Json::create_Obj(const std::string &s, const size_t begin) {
     size_t i = begin;
     std::map<std::string, std::any> result;
     std::pair<std::any, size_t> value;
@@ -43,32 +43,38 @@ std::map<std::string, std::any> Json::create_obj(const std::string &s, const siz
     while (i <= s.size() && !end) {
         if (s[i] != '\"')
             throw std::exception();
+        
         std::string key = create_string(s, ++i);
         i += key.size() + 1;
+        
         if (s[i] != ':')
             throw std::exception();
-        value = create_value(s, ++i);
+        
+        value = create_Value(s, ++i);
         result.emplace(key, value.first);
+        
         if (s[i] == '\"')
             i++;
         i += value.second;
+        
         if (s[i] == '}')
             end = true;
         else if (s[i] != ',')
             throw std::exception();
+        
         i++;
     }
     return result;
 }
 
-std::vector<std::any> Json::create_arr(const std::string &s, const size_t begin) {
+std::vector<std::any> Json::create_Arr(const std::string &s, const size_t begin) {
     std::string str;
     std::vector<std::any> result;
     std::pair<std::any, size_t> value;
     size_t i = begin;
     bool end = false;
     while (i <= s.size() && !end) {
-        value = create_value(s, i);
+        value = create_Value(s, i);
         result.push_back(value.first);
         i += value.second;
         if (s[i] == ']')
@@ -80,7 +86,7 @@ std::vector<std::any> Json::create_arr(const std::string &s, const size_t begin)
     return result;
 }
 
-std::pair<std::any, size_t> Json::create_value(const std::string &s, const size_t current) {
+std::pair<std::any, size_t> Json::create_Value(const std::string &s, const size_t current) {
     size_t i = current;
     std::any value;
     std::string str;

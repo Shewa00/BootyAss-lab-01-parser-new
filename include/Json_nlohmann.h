@@ -14,24 +14,24 @@ using namespace std;
 Json Transform(const std::string &s) {
     Json data(s);
 
-    stringstream ss;
+    stringstream strS;
 
-    ss << "[";
+    strS << "[";
     for (size_t i = 0; i < 4; ++i) {
-        ss << "{";
-        ss << "\"ticker\":\"" << any_cast<string>(any_cast<Json>(data[0])[i]) << "\",";
-        ss << "\"id\":" << any_cast<double>(any_cast<Json>(data[1])[i]) << ",";
-        ss << "\"description\":\"" << any_cast<string>(any_cast<Json>(data[2])[i]) << "\"";
-        ss << "}";
+        strS << "{";
+        strS << R"("ticker":")" << any_cast<string>(any_cast<Json>(data[0])[i]) << "\",";
+        strS << "\"id\":" << any_cast<double>(any_cast<Json>(data[1])[i]) << ",";
+        strS << R"("description":")" << any_cast<string>(any_cast<Json>(data[2])[i]) << "\"";
+        strS << "}";
 
         if (i != 4 - 1)
-            ss << ",";
+            strS << ",";
     }
 
-    ss << "]";
+    strS << "]";
 
     string str;
-    getline(ss, str);
+    getline(strS, str);
 
     return Json(str);
 }

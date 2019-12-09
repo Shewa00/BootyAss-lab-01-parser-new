@@ -6,3 +6,21 @@
 
 #IncludeRegexTransform: 
 
+../include/Checks.h
+
+../include/Json.h
+string
+-
+any
+-
+vector
+-
+map
+-
+
+C:/Users/panda/CLionProjects/lab-01-parser/sources/Json.cpp
+Json.h
+C:/Users/panda/CLionProjects/lab-01-parser/sources/Json.h
+Checks.h
+C:/Users/panda/CLionProjects/lab-01-parser/sources/Checks.h
+
