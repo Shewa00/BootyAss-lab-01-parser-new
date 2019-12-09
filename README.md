@@ -1,4 +1,4 @@
-![Some badge](https://img.shields.io/badge/Booty-Ass-yellow.svg) [![Build Status](https://travis-ci.org/BootyAss/lab-01-parser.svg?branch=master)](https://travis-ci.org/BootyAss/lab-01-parser) ![Discord](https://img.shields.io/discord/486961752823562240) ![GitHub repo size](https://img.shields.io/github/repo-size/bootyass/lab-01-parser?style=for-the-badge) [![forthebadge](https://forthebadge.com/images/badges/made-with-c-plus-plus.svg)](https://forthebadge.com) 
+![Some badge](https://img.shields.io/badge/Booty-Ass-yellow.svg) [![Build Status](https://travis-ci.org/BootyAss/lab-01-parser-new.svg?branch=master)](https://travis-ci.org/BootyAss/lab-01-parser-new) ![Discord](https://img.shields.io/discord/486961752823562240) ![GitHub repo size](https://img.shields.io/github/repo-size/bootyass/lab-01-parser-new?style=for-the-badge) [![forthebadge](https://forthebadge.com/images/badges/made-with-c-plus-plus.svg)](https://forthebadge.com) 
 
 # Лабораторная работа №1
 
