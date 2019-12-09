@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/lab-01-parser.dir/sources/source.cpp.obj"
+  "CMakeFiles/lab-01-parser.dir/sources/Json.cpp.obj"
   "liblab-01-parserd.pdb"
   "liblab-01-parserd.a"
 )

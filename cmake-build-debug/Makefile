@@ -146,32 +146,32 @@ tests/fast:
 	$(MAKE) -f CMakeFiles\tests.dir\build.make CMakeFiles/tests.dir/build
 .PHONY : tests/fast
 
-sources/source.obj: sources/source.cpp.obj
+sources/Json.obj: sources/Json.cpp.obj
 
-.PHONY : sources/source.obj
+.PHONY : sources/Json.obj
 
 # target to build an object file
-sources/source.cpp.obj:
-	$(MAKE) -f CMakeFiles\lab-01-parser.dir\build.make CMakeFiles/lab-01-parser.dir/sources/source.cpp.obj
-.PHONY : sources/source.cpp.obj
+sources/Json.cpp.obj:
+	$(MAKE) -f CMakeFiles\lab-01-parser.dir\build.make CMakeFiles/lab-01-parser.dir/sources/Json.cpp.obj
+.PHONY : sources/Json.cpp.obj
 
-sources/source.i: sources/source.cpp.i
+sources/Json.i: sources/Json.cpp.i
 
-.PHONY : sources/source.i
+.PHONY : sources/Json.i
 
 # target to preprocess a source file
-sources/source.cpp.i:
-	$(MAKE) -f CMakeFiles\lab-01-parser.dir\build.make CMakeFiles/lab-01-parser.dir/sources/source.cpp.i
-.PHONY : sources/source.cpp.i
+sources/Json.cpp.i:
+	$(MAKE) -f CMakeFiles\lab-01-parser.dir\build.make CMakeFiles/lab-01-parser.dir/sources/Json.cpp.i
+.PHONY : sources/Json.cpp.i
 
-sources/source.s: sources/source.cpp.s
+sources/Json.s: sources/Json.cpp.s
 
-.PHONY : sources/source.s
+.PHONY : sources/Json.s
 
 # target to generate assembly for a file
-sources/source.cpp.s:
-	$(MAKE) -f CMakeFiles\lab-01-parser.dir\build.make CMakeFiles/lab-01-parser.dir/sources/source.cpp.s
-.PHONY : sources/source.cpp.s
+sources/Json.cpp.s:
+	$(MAKE) -f CMakeFiles\lab-01-parser.dir\build.make CMakeFiles/lab-01-parser.dir/sources/Json.cpp.s
+.PHONY : sources/Json.cpp.s
 
 tests/test.obj: tests/test.cpp.obj
 
@@ -200,6 +200,33 @@ tests/test.cpp.s:
 	$(MAKE) -f CMakeFiles\tests.dir\build.make CMakeFiles/tests.dir/tests/test.cpp.s
 .PHONY : tests/test.cpp.s
 
+tests/test_nlohmann.obj: tests/test_nlohmann.cpp.obj
+
+.PHONY : tests/test_nlohmann.obj
+
+# target to build an object file
+tests/test_nlohmann.cpp.obj:
+	$(MAKE) -f CMakeFiles\tests.dir\build.make CMakeFiles/tests.dir/tests/test_nlohmann.cpp.obj
+.PHONY : tests/test_nlohmann.cpp.obj
+
+tests/test_nlohmann.i: tests/test_nlohmann.cpp.i
+
+.PHONY : tests/test_nlohmann.i
+
+# target to preprocess a source file
+tests/test_nlohmann.cpp.i:
+	$(MAKE) -f CMakeFiles\tests.dir\build.make CMakeFiles/tests.dir/tests/test_nlohmann.cpp.i
+.PHONY : tests/test_nlohmann.cpp.i
+
+tests/test_nlohmann.s: tests/test_nlohmann.cpp.s
+
+.PHONY : tests/test_nlohmann.s
+
+# target to generate assembly for a file
+tests/test_nlohmann.cpp.s:
+	$(MAKE) -f CMakeFiles\tests.dir\build.make CMakeFiles/tests.dir/tests/test_nlohmann.cpp.s
+.PHONY : tests/test_nlohmann.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -211,12 +238,15 @@ help:
 	@echo ... tests
 	@echo ... rebuild_cache
 	@echo ... test
-	@echo ... sources/source.obj
-	@echo ... sources/source.i
-	@echo ... sources/source.s
+	@echo ... sources/Json.obj
+	@echo ... sources/Json.i
+	@echo ... sources/Json.s
 	@echo ... tests/test.obj
 	@echo ... tests/test.i
 	@echo ... tests/test.s
+	@echo ... tests/test_nlohmann.obj
+	@echo ... tests/test_nlohmann.i
+	@echo ... tests/test_nlohmann.s
 .PHONY : help
 
 

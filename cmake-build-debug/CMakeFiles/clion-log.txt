@@ -4,6 +4,7 @@
 -- [hunter] HUNTER_ROOT: C:/.hunter
 -- [hunter] [ Hunter-ID: 70287b1 | Toolchain-ID: 8fd1943 | Config-ID: e011a36 ]
 -- [hunter] GTEST_ROOT: C:/.hunter/_Base/70287b1/8fd1943/e011a36/Install (ver.: 1.8.0-hunter-p11)
+-- [hunter] NLOHMANN_JSON_ROOT: C:/.hunter/_Base/70287b1/8fd1943/e011a36/Install (ver.: 3.3.0)
 -- Configuring done
 -- Generating done
 -- Build files have been written to: C:/Users/panda/CLionProjects/lab-01-parser/cmake-build-debug

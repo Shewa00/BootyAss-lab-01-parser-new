@@ -268,6 +268,9 @@ lab-01-parser_BINARY_DIR:STATIC=C:/Users/panda/CLionProjects/lab-01-parser/cmake
 //Value Computed by CMake
 lab-01-parser_SOURCE_DIR:STATIC=C:/Users/panda/CLionProjects/lab-01-parser
 
+//The directory containing a CMake configuration file for nlohmann_json.
+nlohmann_json_DIR:PATH=C:/.hunter/_Base/70287b1/8fd1943/e011a36/Install/lib/cmake/nlohmann_json
+
 
 ########################
 # INTERNAL cache entries
@@ -433,6 +436,8 @@ CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 CMAKE_STRIP-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//Details about finding nlohmann_json
+FIND_PACKAGE_MESSAGE_DETAILS_nlohmann_json:INTERNAL=[C:/.hunter/_Base/70287b1/8fd1943/e011a36/Install/lib/cmake/nlohmann_json/nlohmann_jsonConfig.cmake][v3.3.0()]
 HUNTER_CACHED_BUILD_SHARED_LIBS:INTERNAL=
 HUNTER_CACHED_CONFIGURATION_TYPES:INTERNAL=Release;Debug
 HUNTER_CACHED_ROOT:INTERNAL=C:/.hunter

@@ -5,7 +5,7 @@
 		<Option title="lab-01-parser"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\tools\;CMake Files\tools\gate\;CMake Files\tools\gate\cmake\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\.hunter\;CMake Files\..\..\..\..\.hunter\_Base\;CMake Files\..\..\..\..\.hunter\_Base\Download\;CMake Files\..\..\..\..\.hunter\_Base\Download\Hunter\;CMake Files\..\..\..\..\.hunter\_Base\Download\Hunter\0.23.34\;CMake Files\..\..\..\..\.hunter\_Base\Download\Hunter\0.23.34\70287b1\;CMake Files\..\..\..\..\.hunter\_Base\Download\Hunter\0.23.34\70287b1\Unpacked\;CMake Files\..\..\..\..\.hunter\_Base\Download\Hunter\0.23.34\70287b1\Unpacked\cmake\;CMake Files\..\..\..\..\.hunter\_Base\Download\Hunter\0.23.34\70287b1\Unpacked\cmake\modules\;CMake Files\..\..\..\..\.hunter\_Base\Download\Hunter\0.23.34\70287b1\Unpacked\cmake\configs\;CMake Files\..\..\..\..\.hunter\_Base\Download\Hunter\0.23.34\70287b1\Unpacked\cmake\projects\;CMake Files\..\..\..\..\.hunter\_Base\Download\Hunter\0.23.34\70287b1\Unpacked\cmake\projects\GTest\;CMake Files\..\..\..\..\.hunter\_Base\Download\Hunter\0.23.34\70287b1\Unpacked\scripts\;CMake Files\..\..\..\..\.hunter\_Base\70287b1\;CMake Files\..\..\..\..\.hunter\_Base\70287b1\8fd1943\;CMake Files\..\..\..\..\.hunter\_Base\70287b1\8fd1943\e011a36\;CMake Files\..\..\..\..\.hunter\_Base\70287b1\8fd1943\e011a36\Install\;CMake Files\..\..\..\..\.hunter\_Base\70287b1\8fd1943\e011a36\Install\lib\;CMake Files\..\..\..\..\.hunter\_Base\70287b1\8fd1943\e011a36\Install\lib\cmake\;CMake Files\..\..\..\..\.hunter\_Base\70287b1\8fd1943\e011a36\Install\lib\cmake\GTest\;CMake Files\cmake-build-debug\;CMake Files\cmake-build-debug\_3rdParty\;CMake Files\cmake-build-debug\_3rdParty\Hunter\;CMake Files\cmake-build-debug\_3rdParty\Hunter\toolchain\;CMake Files\cmake-build-debug\_3rdParty\Hunter\config-id\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\tools\;CMake Files\tools\gate\;CMake Files\tools\gate\cmake\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\.hunter\;CMake Files\..\..\..\..\.hunter\_Base\;CMake Files\..\..\..\..\.hunter\_Base\Download\;CMake Files\..\..\..\..\.hunter\_Base\Download\Hunter\;CMake Files\..\..\..\..\.hunter\_Base\Download\Hunter\0.23.34\;CMake Files\..\..\..\..\.hunter\_Base\Download\Hunter\0.23.34\70287b1\;CMake Files\..\..\..\..\.hunter\_Base\Download\Hunter\0.23.34\70287b1\Unpacked\;CMake Files\..\..\..\..\.hunter\_Base\Download\Hunter\0.23.34\70287b1\Unpacked\cmake\;CMake Files\..\..\..\..\.hunter\_Base\Download\Hunter\0.23.34\70287b1\Unpacked\cmake\modules\;CMake Files\..\..\..\..\.hunter\_Base\Download\Hunter\0.23.34\70287b1\Unpacked\cmake\configs\;CMake Files\..\..\..\..\.hunter\_Base\Download\Hunter\0.23.34\70287b1\Unpacked\cmake\projects\;CMake Files\..\..\..\..\.hunter\_Base\Download\Hunter\0.23.34\70287b1\Unpacked\cmake\projects\GTest\;CMake Files\..\..\..\..\.hunter\_Base\Download\Hunter\0.23.34\70287b1\Unpacked\cmake\projects\nlohmann_json\;CMake Files\..\..\..\..\.hunter\_Base\Download\Hunter\0.23.34\70287b1\Unpacked\scripts\;CMake Files\..\..\..\..\.hunter\_Base\70287b1\;CMake Files\..\..\..\..\.hunter\_Base\70287b1\8fd1943\;CMake Files\..\..\..\..\.hunter\_Base\70287b1\8fd1943\e011a36\;CMake Files\..\..\..\..\.hunter\_Base\70287b1\8fd1943\e011a36\Install\;CMake Files\..\..\..\..\.hunter\_Base\70287b1\8fd1943\e011a36\Install\lib\;CMake Files\..\..\..\..\.hunter\_Base\70287b1\8fd1943\e011a36\Install\lib\cmake\;CMake Files\..\..\..\..\.hunter\_Base\70287b1\8fd1943\e011a36\Install\lib\cmake\GTest\;CMake Files\..\..\..\..\.hunter\_Base\70287b1\8fd1943\e011a36\Install\lib\cmake\nlohmann_json\;CMake Files\cmake-build-debug\;CMake Files\cmake-build-debug\_3rdParty\;CMake Files\cmake-build-debug\_3rdParty\Hunter\;CMake Files\cmake-build-debug\_3rdParty\Hunter\toolchain\;CMake Files\cmake-build-debug\_3rdParty\Hunter\config-id\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="C:/Users/panda/CLionProjects/lab-01-parser/cmake-build-debug"/>
@@ -138,10 +138,19 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/panda/CLionProjects/lab-01-parser/sources/source.cpp">
+		<Unit filename="C:/Users/panda/CLionProjects/lab-01-parser/include/Json_nlohmann.h">
+			<Option target="lab-01-parser"/>
+		</Unit>
+		<Unit filename="C:/Users/panda/CLionProjects/lab-01-parser/include/function.h">
+			<Option target="lab-01-parser"/>
+		</Unit>
+		<Unit filename="C:/Users/panda/CLionProjects/lab-01-parser/sources/Json.cpp">
 			<Option target="lab-01-parser"/>
 		</Unit>
 		<Unit filename="C:/Users/panda/CLionProjects/lab-01-parser/tests/test.cpp">
+			<Option target="tests"/>
+		</Unit>
+		<Unit filename="C:/Users/panda/CLionProjects/lab-01-parser/tests/test_nlohmann.cpp">
 			<Option target="tests"/>
 		</Unit>
 		<Unit filename="C:/Users/panda/CLionProjects/lab-01-parser/CMakeLists.txt">
@@ -339,6 +348,9 @@
 		<Unit filename="C:/Users/panda/CLionProjects/lab-01-parser/../../../../.hunter/_Base/Download/Hunter/0.23.34/70287b1/Unpacked/cmake/modules/hunter_register_dependency.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\.hunter\_Base\Download\Hunter\0.23.34\70287b1\Unpacked\cmake\modules\"/>
 		</Unit>
+		<Unit filename="C:/Users/panda/CLionProjects/lab-01-parser/../../../../.hunter/_Base/Download/Hunter/0.23.34/70287b1/Unpacked/cmake/modules/hunter_report_broken_package.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\.hunter\_Base\Download\Hunter\0.23.34\70287b1\Unpacked\cmake\modules\"/>
+		</Unit>
 		<Unit filename="C:/Users/panda/CLionProjects/lab-01-parser/../../../../.hunter/_Base/Download/Hunter/0.23.34/70287b1/Unpacked/cmake/modules/hunter_sanity_checks.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\.hunter\_Base\Download\Hunter\0.23.34\70287b1\Unpacked\cmake\modules\"/>
 		</Unit>
@@ -390,6 +402,9 @@
 		<Unit filename="C:/Users/panda/CLionProjects/lab-01-parser/../../../../.hunter/_Base/Download/Hunter/0.23.34/70287b1/Unpacked/cmake/projects/GTest/hunter.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\.hunter\_Base\Download\Hunter\0.23.34\70287b1\Unpacked\cmake\projects\GTest\"/>
 		</Unit>
+		<Unit filename="C:/Users/panda/CLionProjects/lab-01-parser/../../../../.hunter/_Base/Download/Hunter/0.23.34/70287b1/Unpacked/cmake/projects/nlohmann_json/hunter.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\.hunter\_Base\Download\Hunter\0.23.34\70287b1\Unpacked\cmake\projects\nlohmann_json\"/>
+		</Unit>
 		<Unit filename="C:/Users/panda/CLionProjects/lab-01-parser/../../../../.hunter/_Base/Download/Hunter/0.23.34/70287b1/Unpacked/scripts/create-toolchain-info.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\.hunter\_Base\Download\Hunter\0.23.34\70287b1\Unpacked\scripts\"/>
 		</Unit>
@@ -410,6 +425,15 @@
 		</Unit>
 		<Unit filename="C:/Users/panda/CLionProjects/lab-01-parser/../../../../.hunter/_Base/70287b1/8fd1943/e011a36/Install/lib/cmake/GTest/GTestTargets.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\.hunter\_Base\70287b1\8fd1943\e011a36\Install\lib\cmake\GTest\"/>
+		</Unit>
+		<Unit filename="C:/Users/panda/CLionProjects/lab-01-parser/../../../../.hunter/_Base/70287b1/8fd1943/e011a36/Install/lib/cmake/nlohmann_json/nlohmann_jsonConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\.hunter\_Base\70287b1\8fd1943\e011a36\Install\lib\cmake\nlohmann_json\"/>
+		</Unit>
+		<Unit filename="C:/Users/panda/CLionProjects/lab-01-parser/../../../../.hunter/_Base/70287b1/8fd1943/e011a36/Install/lib/cmake/nlohmann_json/nlohmann_jsonConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\.hunter\_Base\70287b1\8fd1943\e011a36\Install\lib\cmake\nlohmann_json\"/>
+		</Unit>
+		<Unit filename="C:/Users/panda/CLionProjects/lab-01-parser/../../../../.hunter/_Base/70287b1/8fd1943/e011a36/Install/lib/cmake/nlohmann_json/nlohmann_jsonTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\.hunter\_Base\70287b1\8fd1943\e011a36\Install\lib\cmake\nlohmann_json\"/>
 		</Unit>
 		<Unit filename="C:/Users/panda/CLionProjects/lab-01-parser/cmake-build-debug/_3rdParty/Hunter/toolchain/toolchain.info.NOLF">
 			<Option virtualFolder="CMake Files\cmake-build-debug\_3rdParty\Hunter\toolchain\"/>
