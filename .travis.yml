@@ -1,9 +1,12 @@
-sudo: false
+os: linux
 
-language: cpp
+sudo: required
 
-compiler:
-  -gcc
+language:
+  - minimal
+
+services:
+  - docker
 
 before_install:
   - pip install --user cpp-coveralls
@@ -15,8 +18,15 @@ install:
   - cmake ..
   - make
 
-script:
-  - ctest -V
+jobs:
+  include:
+    - name: "checks"
+      script:
+        - chmod 755 scripts/*.sh
+        - docker run -v `pwd`:`pwd` -w `pwd` -t rusdevops/bootstrap-cpp scripts/checks.sh
+    - name: "tests"
+      script:
+        - ctest -V
 
 addons:
   apt:
@@ -25,3 +35,6 @@ addons:
     packages:
       - gcc-8
       - g++-8
+
+notifications:
+  email: false

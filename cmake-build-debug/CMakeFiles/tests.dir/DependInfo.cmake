@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/panda/CLionProjects/lab-01-parser/tests/test.cpp" "C:/Users/panda/CLionProjects/lab-01-parser/cmake-build-debug/CMakeFiles/tests.dir/tests/test.cpp.obj"
-  "C:/Users/panda/CLionProjects/lab-01-parser/tests/test_nlohmann.cpp" "C:/Users/panda/CLionProjects/lab-01-parser/cmake-build-debug/CMakeFiles/tests.dir/tests/test_nlohmann.cpp.obj"
+  "C:/Users/panda/CLionProjects/BootyAss-lab-01-parser-new/tests/test.cpp" "C:/Users/panda/CLionProjects/BootyAss-lab-01-parser-new/cmake-build-debug/CMakeFiles/tests.dir/tests/test.cpp.obj"
+  "C:/Users/panda/CLionProjects/BootyAss-lab-01-parser-new/tests/test_nlohmann.cpp" "C:/Users/panda/CLionProjects/BootyAss-lab-01-parser-new/cmake-build-debug/CMakeFiles/tests.dir/tests/test_nlohmann.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -17,7 +17,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "C:/Users/panda/CLionProjects/lab-01-parser/cmake-build-debug/CMakeFiles/lab-01-parser.dir/DependInfo.cmake"
+  "C:/Users/panda/CLionProjects/BootyAss-lab-01-parser-new/cmake-build-debug/CMakeFiles/lab-01-parser.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

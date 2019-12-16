@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/panda/CLionProjects/lab-01-parser/sources/Json.cpp" "C:/Users/panda/CLionProjects/lab-01-parser/cmake-build-debug/CMakeFiles/lab-01-parser.dir/sources/Json.cpp.obj"
+  "C:/Users/panda/CLionProjects/BootyAss-lab-01-parser-new/sources/Json.cpp" "C:/Users/panda/CLionProjects/BootyAss-lab-01-parser-new/cmake-build-debug/CMakeFiles/lab-01-parser.dir/sources/Json.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
