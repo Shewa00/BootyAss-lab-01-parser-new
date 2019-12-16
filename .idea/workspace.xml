@@ -12,7 +12,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4de8ce20-63f3-49f1-b63a-6f97771d3947" name="Default Changelist" comment="Init commit" />
+    <list default="true" id="4de8ce20-63f3-49f1-b63a-6f97771d3947" name="Default Changelist" comment="Init commit">
+      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

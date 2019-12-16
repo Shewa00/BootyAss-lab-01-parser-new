@@ -5,6 +5,9 @@ language: cpp
 compiler:
   -gcc
 
+services:
+  - docker
+
 before_install:
   - pip install --user cpp-coveralls
 
@@ -20,6 +23,10 @@ jobs:
     - name: "Tests"
       script:
         - ctest -V
+    - name: "Checks"
+      script:
+        - chmod 755 scripts/*.sh
+        - docker run -v `pwd`:`pwd` -w `pwd` -t rusdevops/bootstrap-cpp scripts/checks.sh
 
 addons:
   apt:
@@ -28,3 +35,6 @@ addons:
     packages:
       - gcc-8
       - g++-8
+
+notifications:
+  email: false
