@@ -1,6 +1,10 @@
 #!/bin/bash
 set -e
-
-files=`find . -name "*.cpp" -or -name "*.hpp" -or -name ".h" | grep -v "./tools/*" | grep -v "PicoSHA2"`
-filter=-build/c++11,-runtime/references,-whitespace/braces,-whitespace/indent,-whitespace/comments,-build/include_order,-runtime/threadsafe_fn
-echo $files | xargs cpplint --filter=$filter
+export GTEST_COLOR=1
+CMAKE_LINKER_OPTS="-DCMAKE_EXE_LINKER='-fuse-ld=gold'"
+CMAKE_CONFIG_OPTS="-DHUNTER_CONFIGURATION_TYPES=Debug -DCMAKE_BUILD_TYPE=Debug"
+CMAKE_TOOLCHAIN_OPTS="-DCMAKE_TOOLCHAIN_FILE='`pwd`/tools/polly/gcc-7-cxx17-pic.cmake'"
+CMAKE_OPTS="$CMAKE_LINKER_OPTS $CMAKE_CONFIG_OPTS $CMAKE_TOOLCHAIN_OPTS"
+cmake -H. -B_builds $CMAKE_OPTS
+cmake --build _builds
+cmake --build _builds --target test -- ARGS="--verbose"

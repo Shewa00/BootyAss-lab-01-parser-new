@@ -58,10 +58,10 @@ RM = "D:\CLion 2019.2.2\bin\cmake\win\bin\cmake.exe" -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\panda\CLionProjects\BootyAss-lab-01-parser-new\cmake-build-debug\_3rdParty\Hunter\toolchain
+CMAKE_SOURCE_DIR = C:\Users\panda\CLionProjects\lab-01-parser\cmake-build-debug\_3rdParty\Hunter\toolchain
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\panda\CLionProjects\BootyAss-lab-01-parser-new\cmake-build-debug\_3rdParty\Hunter\toolchain\_builds
+CMAKE_BINARY_DIR = C:\Users\panda\CLionProjects\lab-01-parser\cmake-build-debug\_3rdParty\Hunter\toolchain\_builds
 
 #=============================================================================
 # Special targets to cleanup operation of make.

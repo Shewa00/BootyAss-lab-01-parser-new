@@ -23,6 +23,9 @@ SUFFIXES =
 .SUFFIXES: .hpux_make_needs_suffix_list
 
 
+# Produce verbose output by default.
+VERBOSE = 1
+
 # Suppress display of executed commands.
 $(VERBOSE).SILENT:
 
@@ -47,17 +50,17 @@ RM = "D:\CLion 2019.2.2\bin\cmake\win\bin\cmake.exe" -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\panda\CLionProjects\lab-01-parser\cmake-build-debug\_3rdParty\Hunter\toolchain
+CMAKE_SOURCE_DIR = C:\Users\panda\CLionProjects\BootyAss-lab-01-parser-new\cmake-build-debug\CMakeFiles\CMakeTmp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\panda\CLionProjects\lab-01-parser\cmake-build-debug\_3rdParty\Hunter\toolchain\_builds
+CMAKE_BINARY_DIR = C:\Users\panda\CLionProjects\BootyAss-lab-01-parser-new\cmake-build-debug\CMakeFiles\CMakeTmp
 
 #=============================================================================
 # Targets provided globally by CMake.
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	@echo No interactive CMake dialog available...
 	"D:\CLion 2019.2.2\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
@@ -68,7 +71,7 @@ edit_cache/fast: edit_cache
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	@echo Running CMake to regenerate build system...
 	"D:\CLion 2019.2.2\bin\cmake\win\bin\cmake.exe" -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
@@ -78,10 +81,10 @@ rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
 
 # The main all target
-all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\panda\CLionProjects\lab-01-parser\cmake-build-debug\_3rdParty\Hunter\toolchain\_builds\CMakeFiles C:\Users\panda\CLionProjects\lab-01-parser\cmake-build-debug\_3rdParty\Hunter\toolchain\_builds\CMakeFiles\progress.marks
+all:
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\panda\CLionProjects\BootyAss-lab-01-parser-new\cmake-build-debug\CMakeFiles\CMakeTmp\CMakeFiles C:\Users\panda\CLionProjects\BootyAss-lab-01-parser-new\cmake-build-debug\CMakeFiles\CMakeTmp\CMakeFiles\progress.marks
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\panda\CLionProjects\lab-01-parser\cmake-build-debug\_3rdParty\Hunter\toolchain\_builds\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\panda\CLionProjects\BootyAss-lab-01-parser-new\cmake-build-debug\CMakeFiles\CMakeTmp\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -104,30 +107,61 @@ preinstall/fast:
 	$(MAKE) -f CMakeFiles\Makefile2 preinstall
 .PHONY : preinstall/fast
 
-# clear depends
-depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
-.PHONY : depend
+#=============================================================================
+# Target rules for targets named cmTC_4cc28
+
+# Build rule for target.
+cmTC_4cc28:
+	$(MAKE) -f CMakeFiles\Makefile2 cmTC_4cc28
+.PHONY : cmTC_4cc28
+
+# fast build rule for target.
+cmTC_4cc28/fast:
+	$(MAKE) -f CMakeFiles\cmTC_4cc28.dir\build.make CMakeFiles/cmTC_4cc28.dir/build
+.PHONY : cmTC_4cc28/fast
+
+feature_tests.obj: feature_tests.c.obj
+
+.PHONY : feature_tests.obj
+
+# target to build an object file
+feature_tests.c.obj:
+	$(MAKE) -f CMakeFiles\cmTC_4cc28.dir\build.make CMakeFiles/cmTC_4cc28.dir/feature_tests.c.obj
+.PHONY : feature_tests.c.obj
+
+feature_tests.i: feature_tests.c.i
+
+.PHONY : feature_tests.i
+
+# target to preprocess a source file
+feature_tests.c.i:
+	$(MAKE) -f CMakeFiles\cmTC_4cc28.dir\build.make CMakeFiles/cmTC_4cc28.dir/feature_tests.c.i
+.PHONY : feature_tests.c.i
+
+feature_tests.s: feature_tests.c.s
+
+.PHONY : feature_tests.s
+
+# target to generate assembly for a file
+feature_tests.c.s:
+	$(MAKE) -f CMakeFiles\cmTC_4cc28.dir\build.make CMakeFiles/cmTC_4cc28.dir/feature_tests.c.s
+.PHONY : feature_tests.c.s
 
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
-	@echo ... depend
+	@echo ... cmTC_4cc28
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... feature_tests.obj
+	@echo ... feature_tests.i
+	@echo ... feature_tests.s
 .PHONY : help
 
 
 
 #=============================================================================
 # Special targets to cleanup operation of make.
-
-# Special rule to run CMake to check the build system integrity.
-# No rule that depends on this can have commands that come from listfiles
-# because they might be regenerated.
-cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
-.PHONY : cmake_check_build_system
 

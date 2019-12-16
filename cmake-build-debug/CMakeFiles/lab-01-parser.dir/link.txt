@@ -1,2 +1,0 @@
-C:\PROGRA~2\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\ar.exe qc liblab-01-parserd.a  CMakeFiles/lab-01-parser.dir/sources/Json.cpp.obj
-C:\PROGRA~2\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\ranlib.exe liblab-01-parserd.a

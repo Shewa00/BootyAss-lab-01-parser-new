@@ -32,7 +32,7 @@ find_package(nlohmann_json CONFIG REQUIRED)
 
 add_library(lab-01-parser STATIC
         # enum your files and delete this comment
-        sources/Json.cpp include/Checks.h include/Json_nlohmann.h include/Any.h)
+        sources/Json.cpp include/Checks.h include/Json_nlohmann.h)
 
 add_executable(tests
         # TODO: enum your files and delete this comment

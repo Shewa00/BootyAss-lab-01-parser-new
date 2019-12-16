@@ -15,20 +15,21 @@
     <list default="true" id="4de8ce20-63f3-49f1-b63a-6f97771d3947" name="Default Changelist" comment="Init commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lab-01-parser.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lab-01-parser.dir/CXX.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lab-01-parser.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lab-01-parser.dir/depend.internal" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lab-01-parser.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lab-01-parser.dir/depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tests.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tests.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tests.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tests.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tests.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tests.dir/depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/_3rdParty/Hunter/toolchain/_builds/CMakeFiles/3.14.5/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/_3rdParty/Hunter/toolchain/_builds/CMakeFiles/3.14.5/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/_3rdParty/Hunter/toolchain/_builds/CMakeFiles/3.14.5/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/_3rdParty/Hunter/toolchain/_builds/CMakeFiles/3.14.5/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/_3rdParty/Hunter/toolchain/_builds/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/_3rdParty/Hunter/toolchain/_builds/CMakeFiles/CMakeOutput.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/_3rdParty/Hunter/toolchain/_builds/CMakeFiles/feature_tests.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/_3rdParty/Hunter/toolchain/_builds/CMakeFiles/feature_tests.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/lab-01-parser.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lab-01-parser.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/Json.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/Json.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/Json_nlohmann.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/Json_nlohmann.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/function.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/Checks.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sources/Json.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/sources/Json.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_nlohmann.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_nlohmann.cpp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -95,7 +96,6 @@
       <workItem from="1571493478257" duration="1280000" />
       <workItem from="1571507406399" duration="2314000" />
       <workItem from="1575924511483" duration="3516000" />
-      <workItem from="1576537052044" duration="1208000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <created>1569522472872</created>

@@ -1,12 +1,9 @@
-os: linux
+sudo: false
 
-sudo: required
+language: cpp
 
-language:
-  - minimal
-
-services:
-  - docker
+compiler:
+  -gcc
 
 before_install:
   - pip install --user cpp-coveralls
@@ -18,11 +15,8 @@ install:
   - cmake ..
   - make
 
-jobs:
-  include:
-    - name: "tests"
-      script:
-        - ctest -V
+script:
+  - ctest -V
 
 addons:
   apt:
@@ -31,6 +25,3 @@ addons:
     packages:
       - gcc-8
       - g++-8
-
-notifications:
-  email: false
