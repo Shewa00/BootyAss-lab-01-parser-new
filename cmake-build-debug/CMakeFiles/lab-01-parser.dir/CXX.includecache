@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/Checks.h
+
+../include/Json.h
+string
+-
+any
+-
+vector
+-
+map
+-
+
+C:/Users/panda/CLionProjects/BootyAss-lab-01-parser-new/sources/Json.cpp
+Json.h
+C:/Users/panda/CLionProjects/BootyAss-lab-01-parser-new/sources/Json.h
+Checks.h
+C:/Users/panda/CLionProjects/BootyAss-lab-01-parser-new/sources/Checks.h
+
