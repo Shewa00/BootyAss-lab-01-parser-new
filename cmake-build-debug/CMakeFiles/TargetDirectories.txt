@@ -1,0 +1,5 @@
+C:/Users/panda/CLionProjects/BootyAss-lab-01-parser-new/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/panda/CLionProjects/BootyAss-lab-01-parser-new/cmake-build-debug/CMakeFiles/lab-01-parser.dir
+C:/Users/panda/CLionProjects/BootyAss-lab-01-parser-new/cmake-build-debug/CMakeFiles/tests.dir
+C:/Users/panda/CLionProjects/BootyAss-lab-01-parser-new/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/panda/CLionProjects/BootyAss-lab-01-parser-new/cmake-build-debug/CMakeFiles/test.dir

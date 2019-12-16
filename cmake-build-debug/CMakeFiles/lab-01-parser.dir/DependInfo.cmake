@@ -1,15 +1,16 @@
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
-  "C"
+  "CXX"
   )
 # The set of files for implicit dependencies of each language:
-set(CMAKE_DEPENDS_CHECK_C
-  "C:/Users/panda/CLionProjects/BootyAss-lab-01-parser-new/cmake-build-debug/CMakeFiles/feature_tests.c" "C:/Users/panda/CLionProjects/BootyAss-lab-01-parser-new/cmake-build-debug/CMakeFiles/CMakeTmp/CMakeFiles/cmTC_4cc28.dir/feature_tests.c.obj"
+set(CMAKE_DEPENDS_CHECK_CXX
+  "C:/Users/panda/CLionProjects/BootyAss-lab-01-parser-new/sources/Json.cpp" "C:/Users/panda/CLionProjects/BootyAss-lab-01-parser-new/cmake-build-debug/CMakeFiles/lab-01-parser.dir/sources/Json.cpp.obj"
   )
-set(CMAKE_C_COMPILER_ID "GNU")
+set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
-set(CMAKE_C_TARGET_INCLUDE_PATH
+set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "../include"
   )
 
 # Targets to which this target links.

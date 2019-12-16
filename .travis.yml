@@ -15,8 +15,11 @@ install:
   - cmake ..
   - make
 
-script:
-  - ctest -V
+jobs:
+  include:
+    - name: "tests"
+      script:
+        - ctest -V
 
 addons:
   apt:

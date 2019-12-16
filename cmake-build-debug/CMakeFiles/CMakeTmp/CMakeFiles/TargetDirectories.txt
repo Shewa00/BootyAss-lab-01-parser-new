@@ -1,3 +1,0 @@
-C:/Users/panda/CLionProjects/BootyAss-lab-01-parser-new/cmake-build-debug/CMakeFiles/CMakeTmp/CMakeFiles/cmTC_4cc28.dir
-C:/Users/panda/CLionProjects/BootyAss-lab-01-parser-new/cmake-build-debug/CMakeFiles/CMakeTmp/CMakeFiles/edit_cache.dir
-C:/Users/panda/CLionProjects/BootyAss-lab-01-parser-new/cmake-build-debug/CMakeFiles/CMakeTmp/CMakeFiles/rebuild_cache.dir
