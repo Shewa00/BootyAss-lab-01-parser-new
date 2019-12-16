@@ -20,10 +20,9 @@ install:
 
 jobs:
   include:
-    - name: "Tests"
+    - name: "tests"
       script:
         - ctest -V
-
     - name: "checks"
       script:
         - chmod 755 scripts/*.sh
