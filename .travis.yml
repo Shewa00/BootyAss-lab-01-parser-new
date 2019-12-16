@@ -23,7 +23,8 @@ jobs:
     - name: "Tests"
       script:
         - ctest -V
-    - name: "Checks"
+
+    - name: "checks"
       script:
         - chmod 755 scripts/*.sh
         - docker run -v `pwd`:`pwd` -w `pwd` -t rusdevops/bootstrap-cpp scripts/checks.sh
