@@ -17,7 +17,7 @@ install:
 
 jobs:
   include:
-    - name: "tests"
+    - name: "Tests"
       script:
         - ctest -V
 
