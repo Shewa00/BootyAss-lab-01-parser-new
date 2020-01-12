@@ -36,7 +36,7 @@ std::any &Json::operator[](size_t index) {
 }
 
 
-std::map<std::string, std::any> 
+std::map<std::string, std::any>
     Json::create_Obj(const std::string &s, const size_t begin) {
     size_t i = begin;
     std::map<std::string, std::any> result;
@@ -69,7 +69,7 @@ std::map<std::string, std::any>
     return result;
 }
 
-std::vector<std::any> 
+std::vector<std::any>
     Json::create_Arr(const std::string &s, const size_t begin) {
     std::string str;
     std::vector<std::any> result;
