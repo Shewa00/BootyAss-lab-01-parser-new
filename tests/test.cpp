@@ -1,3 +1,4 @@
+Copyright 2020 panda
 #include <gtest/gtest.h>
 #include "Json.h"
 
@@ -30,7 +31,6 @@ TEST(Json, SimpleTest) {
     EXPECT_EQ(std::any_cast<double>(marks[3]), 5);
     EXPECT_EQ(std::any_cast<double>(marks[4]), 2);
     EXPECT_EQ(std::any_cast<double>(marks[5]), 3);
-
 
     auto address = std::any_cast<Json>(object["address"]);
     EXPECT_EQ(std::any_cast<std::string>(address["city"]), "Moscow");
