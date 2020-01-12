@@ -1,3 +1,4 @@
+Copyright 2020 panda
 #include <gtest/gtest.h>
 #include <nlohmann/json.hpp>
 
@@ -8,8 +9,9 @@ TEST(Json, SimpleTestNlohmann) {
     json JsonArr = json::array({
                                        {"Si-9.15", "RTS-9.15", "GAZP-9.15"},
                                        {100024, 100027, 100050},
-                                       {"Futures contract for USD/RUB", "Futures contract for index RTS",
-                                                                                    "Futures contract for Gazprom shares"}
+                                       {"Futures contract for USD/RUB",
+                                        "Futures contract for index RTS",
+                                        "Futures contract for Gazprom shares"}
                                });
     size_t count = 0;
     for (size_t j = 0; j < JsonArr.begin()->size(); ++j) {
@@ -32,7 +34,7 @@ TEST(Json, SimpleTestNlohmann) {
         }
         JsonArrEmpty.push_back(temp);
     }
-    
+
     JsonArr = JsonArrEmpty;
     EXPECT_EQ(JsonArr[0]["ticker"], "Si-9.15");
     EXPECT_EQ(JsonArr[1]["ticker"], "RTS-9.15");
@@ -43,5 +45,4 @@ TEST(Json, SimpleTestNlohmann) {
     EXPECT_EQ(JsonArr[0]["description"], "Futures contract for USD/RUB");
     EXPECT_EQ(JsonArr[1]["description"], "Futures contract for index RTS");
     EXPECT_EQ(JsonArr[2]["description"], "Futures contract for Gazprom shares");
-
 }
