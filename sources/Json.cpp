@@ -1,3 +1,4 @@
+Copyright 2020 panda
 #include "Json.h"
 #include "Checks.h"
 
@@ -35,7 +36,8 @@ std::any &Json::operator[](size_t index) {
 }
 
 
-std::map<std::string, std::any> Json::create_Obj(const std::string &s, const size_t begin) {
+std::map<std::string, std::any> 
+    Json::create_Obj(const std::string &s, const size_t begin) {
     size_t i = begin;
     std::map<std::string, std::any> result;
     std::pair<std::any, size_t> value;
@@ -43,31 +45,32 @@ std::map<std::string, std::any> Json::create_Obj(const std::string &s, const siz
     while (i <= s.size() && !end) {
         if (s[i] != '\"')
             throw std::exception();
-        
+
         std::string key = create_string(s, ++i);
         i += key.size() + 1;
-        
+
         if (s[i] != ':')
             throw std::exception();
-        
+
         value = create_Value(s, ++i);
         result.emplace(key, value.first);
-        
+
         if (s[i] == '\"')
             i++;
         i += value.second;
-        
+
         if (s[i] == '}')
             end = true;
         else if (s[i] != ',')
             throw std::exception();
-        
+
         i++;
     }
     return result;
 }
 
-std::vector<std::any> Json::create_Arr(const std::string &s, const size_t begin) {
+std::vector<std::any> 
+    Json::create_Arr(const std::string &s, const size_t begin) {
     std::string str;
     std::vector<std::any> result;
     std::pair<std::any, size_t> value;
@@ -86,7 +89,8 @@ std::vector<std::any> Json::create_Arr(const std::string &s, const size_t begin)
     return result;
 }
 
-std::pair<std::any, size_t> Json::create_Value(const std::string &s, const size_t current) {
+std::pair<std::any, size_t>
+    Json::create_Value(const std::string &s, const size_t current) {
     size_t i = current;
     std::any value;
     std::string str;
@@ -117,8 +121,9 @@ std::pair<std::any, size_t> Json::create_Value(const std::string &s, const size_
     } else if (s.substr(i, 4) == "null") {
         i += 3;
         value = nullptr;
-    } else
+    } else {
         throw std::exception();
+    }
 
     return std::pair<std::any, size_t>(value, i - current);
 }
