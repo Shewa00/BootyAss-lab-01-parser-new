@@ -4,22 +4,6 @@ language:
   - minimal
 services:
   - docker
-  
-compiler:
-  -gcc
-
-before_install:
-  - pip install --user cpp-coveralls
-
-install:
-  - if [ "$CXX" = "g++" ]; then export CXX="g++-8" CC="gcc-8"; fi
-  - mkdir build
-  - cd build
-  - cmake ..
-  - make
-
-node_js:
-  - 8
 
 notifications:
   email: false
@@ -32,4 +16,4 @@ jobs:
         - docker run -v `pwd`:`pwd` -w `pwd` -t rusdevops/bootstrap-cpp scripts/checks.sh   
     - name: "tests"
       script:
-        - ./tests
+        - ctest -V
