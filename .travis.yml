@@ -16,4 +16,4 @@ jobs:
         - docker run -v `pwd`:`pwd` -w `pwd` -t rusdevops/bootstrap-cpp scripts/checks.sh   
     - name: "tests"
       script:
-        - ctest -V
+        - ./tests
